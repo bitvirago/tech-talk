@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func t(k int) {
-
+func t(k int) int {
+	return k + 2
 }
 
 func demoFunc1() string {
@@ -26,5 +26,4 @@ func main() {
 	}
 
 	demoFunc3(demoFunc1(), demoFunc2())
-
 }
