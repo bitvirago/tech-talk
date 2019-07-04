@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  remote_debug:
+    build:
+      context: .
+
+    ports:
+      - 2345:2345
+      - 9999:9999
+    security_opt:
+      - "seccomp:unconfined"
